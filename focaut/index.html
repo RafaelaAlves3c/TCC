@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--links externos-->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/7148/7148801.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    
+    <!--script-->
+    <script src="assets/js/script.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+    <title>Focaut</title>
+</head>
+    <style>
+
+        /* Menu */
+
+        @font-face {
+            font-family: 'menuFont';
+            src: url('./assets/font/Baloo/Baloo2-Bold.ttf');
+        }
+
+        .nav-list li a{
+            font-family: menuFont;
+        }
+
+        /* Contato */
+
+        @font-face {
+            font-family: 'cttFont';
+            src: url('./assets/font/Nunito/Nunito-VariableFont_wght.ttf');
+        }  
+
+        .login-button button a{
+            font-family: cttFont;
+        }
+
+        /* Menu */
+
+        @font-face {
+            font-family: 'menuFont';
+            src: url('./assets/font/Baloo/Baloo2-Bold.ttf');
+        }
+
+        .container-extras h1{
+            font-family: menuFont;
+        }
+    </style>
+<body>
+    <header id="header" class="header">
+        <nav class="nav-bar">
+            <div class="logo">
+                <a href="index.html" alt="logo Focaut"><img src="" alt=""></a>
+            </div>
+
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#hero" id="home-header" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#about" id="about-header" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="#extras" id="causes-header" class="nav-link">Blog</a></li>
+                </ul>
+
+                <div class="login-button">
+                    <button><a href="jogos.html">Jogos</a></button>
+                </div>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img id="icon" src="assets/img/menu-svgrepo-com.svg" alt="menu hamburguer"></button>
+            </div>
+        </nav>
+        
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item-mobile"><a href="#about" id="about-header" class="nav-link-mobile">Sobre</a></li>
+                <li class="nav-item-mobile"><a href="#extras" id="causes-header" class="nav-link-mobile">Causa</a></li>
+            </ul>
+            <div class="login-button">
+                <button><a href="jogos.html">Jogos</a></button>
+            </div>
+        </div>
+    </header><!-- end header -->
+
+    <section id="hero" class="hero">
+        <div class="container-hero">
+            <div class="hero-text">
+                <h1 style="margin-bottom: 10px;">Peças que Encaixam</h1>
+                <p>
+                    Peças que Encaixam é um projeto voltado para pessoas autistas, nosso compromisso é trazer informações 
+                    reais e confiáveis ​​e torná-las acessíveis a pessoas com pouco conhecimento sobre o mundo do TEA.
+                </p>
+                <ul class="btn-list">
+                    <li>
+                      <a href="#" class="btn-download" aria-label="Download from app store">
+                        <img src="assets/img/app-store.png" width="185" height="69" alt="app store" class="img">
+                      </a>
+                    </li>
+      
+                    <li>
+                      <a href="#" class="btn-download" aria-label="Download from play store">
+                        <img src="assets/img/play-store.png" width="185" height="69" alt="play store" class="img">
+                      </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </section><!--end hero-->
+
+    <section id="about" class="about">
+        <div class="container-about">
+            <div class="row">
+                <div class="what">
+                    <h1>O que é o TEA?</h1>
+                    <p>
+                        O Transtorno do Espectro Autista (TEA) ou autismo, é caracterizado por uma desordem cerebral 
+                        que impacta no desenvolvimento da pessoa, podendo interferir na forma como ela percebe o 
+                        mundo ao redor e interage com os outros, ocasionando desafios sociais, de comunicação 
+                        (verbal ou não) e comportamentais. Trata-se de uma condição crônica, de uma deficiência 
+                        neurológica, e não de uma doença.<br>
+                        <br><span style="color: #5cb6f6;text-decoration: underline;cursor: pointer;">Não possui cura apenas Tratamento</span>, o tratamento adequado para o TEA envolve psicológos, terapeutas e em alguns casos até medicamentos.
+                    </p>
+                </div>
+                <img class="img-sobre" src="assets/img/png1.png" alt="imagem criança brincando com bloquinhos">
+            </div>
+        </div>
+    </section><!--end about-->
+
+    <section id="extras" class="extras">
+        <div class="line1" id="line1">
+            <img class="blue" src="assets/img/linhaBlue.png" alt="">
+        </div>
+        <div class="puzzle" id="puzzle">
+            <img class="qbr-kbc" src="assets/img/puzzle.png" alt="">
+        </div>
+        <div class="container-extras">
+            <h3>Blog</h3>
+            <div class="grid">
+                <div class="card">
+                    <img src="https://s3.amazonaws.com/blog.dentrodahistoria.com.br/wp-content/uploads/2019/07/05154456/pablo3-2-1024x559.png">
+                    <div>
+                        <h1>Causas do TEA</h1>
+                        <p>
+                        Está comprovado cientificamente 
+                        que à presença do Transtorno espectro
+                        Autista (TEA) pode vir de algumas causas.
+                        </p>
+                        <button><a class="more" href="causas.html">Saiba mais</a></button>
+                    </div>
+                </div>
+                <div class="card">
+                        <img src="https://cdn.ibahia.com/img/inline/310000/1200x675/Autismo-entenda-niveis-e-tratamentos-para-pessoas-0031674900202404021723-9.webp?fallback=https%3A%2F%2Fcdn.ibahia.com%2Fimg%2Finline%2F310000%2FAutismo-entenda-niveis-e-tratamentos-para-pessoas-0031674900202404021723.png%3Fxid%3D1564810&xid=1564810">
+                        <div>
+                          <h1>Graus do TEA</h1>
+                          <p>
+                            Está comprovado cientificamente 
+                            que as mutações genéticas desempenham 
+                            um papel significativo no surgimento 
+                            do autismo.
+                          </p>
+                          <button><a class="more" href="graus.html">Saiba mais</a></button>
+                        </div>
+                </div>
+                <div class="card">
+                        <img src="assets/img/medicos.jpg">
+                        <div>
+                          <h1>Meios de Tratamento</h1>
+                          <p>
+                            Está comprovado cientificamente 
+                            que as mutações genéticas desempenham 
+                            um papel significativo no surgimento 
+                            do autismo.
+                          </p>
+                          <button><a class="more" href="tratamentos.html">Saiba mais</a></button>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section><!--end causes-->
+
+    <footer>
+        <div id="footer_content">
+            <div class="about-footer">
+                <h2 style="color: #fff;margin-bottom: 10px;">Sobre</h2>
+                <p>
+                    Somos um projeto com o objetivo de apoiar crianças autistas através de jogos, 
+                    melhorando a concentração, a interação social e o raciocínio.
+                </p>
+                <div id="footer_contacts">
+                    <div id="footer_social_media">
+                        <a href="#" class="footer-link" id="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="" class="footer-link" id="facebook">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#" class="footer-link" id="whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>      
+                        <a href="#" class="footer-link" id="email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>      
+                    </div>
+                </div> 
+            </div> 
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Blog</h3>
+                </li>
+                <li>
+                    <a href="causas.html" class="footer-link">Causas</a>
+                </li>
+                <li>
+                    <a href="graus.html" class="footer-link">Graus</a>
+                </li>
+                <li>
+                    <a href="tratamentos.html" class="footer-link">Tratamentos</a>
+                </li>
+                <li>
+                    <a href="jogos.html" class="footer-link">Jogos</a>
+                </li>
+            </ul>
+
+            <div class="lion">
+                <img src="assets/img/lion.png" alt="">
+            </div>               
+        </div>
+
+        <div id="footer_copyright">   
+            Desenvolvido por Peças que Encaixam, 2024.
+        </div>
+    </footer><!--end footer--> 
+
+    <section id="Vlibras">
+        <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+    </section><!--e nd vlibras-->
+</body>
+</html>
